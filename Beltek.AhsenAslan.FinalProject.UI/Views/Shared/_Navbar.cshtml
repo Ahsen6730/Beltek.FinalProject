@@ -1,0 +1,29 @@
+﻿
+@using Beltek.AhsenAslan.FinalProject.UI.Helpers
+<nav class="navbar navbar-expand-custom navbar-mainbg">
+        <a class="navbar-brand navbar-logo" href="/Home/Index">Ürün Yönetim Sistemi</a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item @Html.ActiveClass("Home")">
+                    <a class="nav-link"  asp-action="Index" is-active-route asp-controller="Home"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                </li>
+                <li class="nav-item @Html.ActiveClass("Product")">
+                    <a class="nav-link" asp-action="Index" is-active-route asp-controller="Product"><i class="fa fa-box"></i>Ürün</a>
+                </li>
+                <li class="nav-item @Html.ActiveClass("Price")">
+                    <a class="nav-link" asp-action="Index" is-active-route asp-controller="Price"><i class="fas fa-tags"></i>Fiyat</a>
+                </li>
+                <li class="nav-item @Html.ActiveClass("Gallery")">
+                    <a class="nav-link"  asp-action="Index" is-active-route asp-controller="Gallery"><i class="fa fa-image"></i>Resim</a>
+                </li>
+                <li class="nav-item @Html.ActiveClass("Category")">
+                    <a class="nav-link"   asp-action="Index" is-active-route asp-controller="Category"><i class="fa fa-chart-bar"></i>Kategori</a>
+                </li>
+             
+            </ul>
+        </div>
+    </nav>
